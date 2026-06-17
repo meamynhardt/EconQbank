@@ -14,6 +14,7 @@ def load_data():
 df = load_data()
 
 # 2. PDF Generation Function
+# 2. PDF Generation Function
 def generate_pdf(filtered_df):
     pdf = FPDF()
     pdf.add_page()
@@ -26,15 +27,45 @@ def generate_pdf(filtered_df):
         def clean(text):
             return str(text).encode('latin-1', 'replace').decode('latin-1')
         
+        # 1. Print Question
         pdf.set_font("Arial", 'B', 12)
         pdf.multi_cell(0, 8, txt=f"{count}. {clean(row['Question'])}")
+        pdf.ln(2)
         
+        # 2. Insert First Image (if it exists)
+        img_path_1 = str(row['Image']).strip()
+        if img_path_1 and img_path_1.lower() != 'nan':
+            if os.path.exists(img_path_1):
+                try:
+                    # w=130 keeps the image from going off the edge of an A4 page
+                    pdf.image(img_path_1, w=130) 
+                    pdf.ln(4)
+                except Exception as e:
+                    pdf.set_font("Arial", 'I', 10)
+                    pdf.multi_cell(0, 6, txt="[Error: Image format not supported by PDF]")
+        
+        # 3. Insert Second Image (if it exists)
+        if 'Image_1' in row:
+            img_path_2 = str(row['Image_1']).strip()
+            if img_path_2 and img_path_2.lower() != 'nan':
+                if os.path.exists(img_path_2):
+                    try:
+                        pdf.image(img_path_2, w=130)
+                        pdf.ln(4)
+                    except Exception as e:
+                        pdf.set_font("Arial", 'I', 10)
+                        pdf.multi_cell(0, 6, txt="[Error: Second image format not supported]")
+        
+        # 4. Print Options
         if pd.notna(row['Options']):
             pdf.set_font("Arial", '', 11)
             for opt in str(row['Options']).split('\n'):
                 if opt.strip():
                     pdf.multi_cell(0, 6, txt=clean(opt.strip()))
-        pdf.ln(5)
+                    
+        # Add space before the next question
+        pdf.ln(8)
+        
     return pdf.output(dest='S').encode('latin-1')
 
 # 3. Sidebar Filters

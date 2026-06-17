@@ -11,7 +11,7 @@ D the time period when at least one factor of production is fixed",B,Topic 2: Th
 B normative, positive
 C positive, normative
 D positive, positive",D,Topic 1: Basic economic ideas and resource allocation,AS,9708_m23_qp_12,Easy,Understanding,9708_m23_qp_12_3
-4,The diagram shows the production possibility curve for wheat and corn. What can be deduced from the diagram?,quiz_images/9708_m23_qp_12_4.png,,"A As the price of corn falls, more of it is demanded.
+4,The diagram shows the production possibility curve for wheat and corn. What can be deduced from the diagram?,9708_m23_qp_12_4.png,,"A As the price of corn falls, more of it is demanded.
 B Resources used in producing corn are more efficient than in producing wheat.
 C The opportunity cost of producing corn falls when moving from M to N.
 D The opportunity cost of producing corn is constant when moving from M to N.",D,Topic 1: Basic economic ideas and resource allocation,AS,9708_m23_qp_12,Medium,Analysis,9708_m23_qp_12_4
@@ -22,7 +22,7 @@ Which price rise would cause the quantity supplied to double?",,,"A $1 to $2
 B $1 to $3
 C $1 to $4
 D $1 to $5",C,Topic 2: The price system and the microeconomy,AS,9708_m23_qp_12,Difficult,Application,9708_m23_qp_12_5
-6,Which diagram illustrates unitary elasticity of supply?,quiz_images/9708_m23_qp_12_6.png,,"A
+6,Which diagram illustrates unitary elasticity of supply?,9708_m23_qp_12_6.png,,"A
 B
 C
 D",C,Topic 2: The price system and the microeconomy,AS,9708_m23_qp_12,Medium,Understanding,9708_m23_qp_12_6
@@ -30,7 +30,7 @@ D",C,Topic 2: The price system and the microeconomy,AS,9708_m23_qp_12,Medium,Und
 B in the hiring of workers by employers
 C in the ownership of land for agricultural use
 D in the provision of public goods by the government",D,Topic 3: Government microeconomic intervention,AS,9708_m23_qp_12,Easy,Understanding,9708_m23_qp_12_7
-8,"A sports stadium has two prices of seats. The cheaper seats are $10 and the more expensive seats are $20. When the prices of all seats are increased by 10%, the effects on demand are a fall of 5% for the cheaper seats and a fall of 12% for the more expensive seats. What describes the responsiveness of demand to the change in price?",quiz_images/9708_m23_qp_12_8.png,,"A elastic, elastic
+8,"A sports stadium has two prices of seats. The cheaper seats are $10 and the more expensive seats are $20. When the prices of all seats are increased by 10%, the effects on demand are a fall of 5% for the cheaper seats and a fall of 12% for the more expensive seats. What describes the responsiveness of demand to the change in price?",9708_m23_qp_12_8.png,,"A elastic, elastic
 B elastic, inelastic
 C inelastic, elastic
 D inelastic, unitary elasticity",C,Topic 2: The price system and the microeconomy,AS,9708_m23_qp_12,Difficult,Evaluation,9708_m23_qp_12_8
@@ -42,11 +42,11 @@ D It shows a positive relationship between income and quantity demanded.",B,Topi
 B Consumers pay the same prices for goods and services to satisfy their wants.
 C Human wants exceed what can be produced from available resources.
 D Natural resources are unevenly distributed amongst nations.",C,Topic 1: Basic economic ideas and resource allocation,AS,9708_m23_qp_12,Easy,Understanding,9708_m23_qp_12_10
-11,Butter and buttermilk are goods in joint supply. Supply curves in both markets slope upwards to the right. Health concerns cause people to reduce their consumption of butter. What are the initial consequences of this for supply in the markets for butter and buttermilk?,quiz_images/9708_m23_qp_12_11.png,,"A move left along supply curve, move left along supply curve
+11,Butter and buttermilk are goods in joint supply. Supply curves in both markets slope upwards to the right. Health concerns cause people to reduce their consumption of butter. What are the initial consequences of this for supply in the markets for butter and buttermilk?,9708_m23_qp_12_11.png,,"A move left along supply curve, move left along supply curve
 B move left along supply curve, shift left of the supply curve
 C shift left of the supply curve, move left along supply curve
 D shift left of the supply curve, shift left of the supply curve",B,Topic 2: The price system and the microeconomy,AS,9708_m23_qp_12,Medium,Analysis,9708_m23_qp_12_11
-12,"The diagram shows the demand and supply of a good. When the market is in equilibrium, which area measures the difference between what consumers are willing and able to pay and what producers receive at that output?",quiz_images/9708_m23_qp_12_12.png,,"A x
+12,"The diagram shows the demand and supply of a good. When the market is in equilibrium, which area measures the difference between what consumers are willing and able to pay and what producers receive at that output?",9708_m23_qp_12_12.png,,"A x
 B y
 C x+y
 D x-y",A,Topic 2: The price system and the microeconomy,AS,9708_m23_qp_12,Medium,Analysis,9708_m23_qp_12_12
@@ -54,7 +54,7 @@ D x-y",A,Topic 2: The price system and the microeconomy,AS,9708_m23_qp_12,Medium
 B Consumers are unable to afford bicycles.
 C Consumers are not aware of the external benefits of using bicycles.
 D Consumers ignore the external costs of using bicycles.",C,Topic 3: Government microeconomic intervention,AS,9708_m23_qp_12,Medium,Analysis,9708_m23_qp_12_13
-14,The table shows Gini coefficients for both income and wealth in two countries. Which statement is correct?,quiz_images/9708_m23_qp_12_14.png,,"A Gini coefficients are not comparable between income and wealth because one is a flow concept and the other is a stock concept.
+14,The table shows Gini coefficients for both income and wealth in two countries. Which statement is correct?,9708_m23_qp_12_14.png,,"A Gini coefficients are not comparable between income and wealth because one is a flow concept and the other is a stock concept.
 B Income inequality is greater in country P than in country Q.
 C Wealth inequality is greater in country P than in country Q.
 D Wealth inequality is greater than income inequality in both countries.",B,Topic 1: Basic economic ideas and resource allocation,AS,9708_m23_qp_12,Difficult,Evaluation,9708_m23_qp_12_14
@@ -62,27 +62,27 @@ D Wealth inequality is greater than income inequality in both countries.",B,Topi
 B an increase in taxation
 C an increase in the budget surplus
 D an increase in the exchange rate",A,Topic 5: Government macroeconomic intervention,AS,9708_m23_qp_12,Medium,Application,9708_m23_qp_12_15
-16,The table shows selected information from a country's national accounts. What is the country's net national income?,quiz_images/9708_m23_qp_12_16.png,,"A $19 billion
+16,The table shows selected information from a country's national accounts. What is the country's net national income?,9708_m23_qp_12_16.png,,"A $19 billion
 B $25 billion
 C $31 billion
 D $33 billion",A,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Medium,Application,9708_m23_qp_12_16
-17,The graphs show the changes in the exchange rates of the pound sterling (£) against the US dollar (US$) and the euro (€) between the years 2001 and 2003. What happened to the value of the £ between the years 2001 and 2003?,quiz_images/9708_m23_qp_12_17.png,,"A The £ appreciated against the US$ and depreciated against the €.
-B The £ appreciated against the US$ and the €.
-C The £ depreciated against the US$ and appreciated against the €.
-D The £ depreciated against the US$ and the €.",A,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Medium,Analysis,9708_m23_qp_12_17
+17,The graphs show the changes in the exchange rates of the pound sterling (�) against the US dollar (US$) and the euro between the years 2001 and 2003. What happened to the value of the � between the years 2001 and 2003?,9708_m23_qp_12_17.png,,"A The � appreciated against the US$ and depreciated against the Euro.
+B The � appreciated against the US$ and the euro.
+C The � depreciated against the US$ and appreciated against the euro.
+D The � depreciated against the US$ and the euro.",A,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Medium,Analysis,9708_m23_qp_12_17
 18,Which statement about the circular flow of income is correct?,,,"A Exports and imports do not affect the equilibrium level of national income because they always cancel each other out.
 B The greater the level of saving, the greater the level of injections in the form of investment must be.
 C When consumers use past savings to increase their spending, there will be a rise in national income.
 D When a government increases withdrawals by increasing the rate of income tax, there must be an equivalent increase in injections to compensate.",C,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Easy,Recall,9708_m23_qp_12_18
-19,The graph shows a country's average annual inflation rate over a five-year period. What can be concluded about the general price level during the five years?,quiz_images/9708_m23_qp_12_19.png,,"A It fell in only one year.
+19,The graph shows a country's average annual inflation rate over a five-year period. What can be concluded about the general price level during the five years?,9708_m23_qp_12_19.png,,"A It fell in only one year.
 B It fell in only two years.
 C It rose in only two years.
 D It was constant in only one year.",A,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Medium,Analysis,9708_m23_qp_12_19
-20,"In an economy, wages and prices are both rising but wages are rising faster. Which features are likely to exist in this economy?",quiz_images/9708_m23_qp_12_20.png,,"A cost-push inflation: no, rise in real incomes: no
+20,"In an economy, wages and prices are both rising but wages are rising faster. Which features are likely to exist in this economy?",9708_m23_qp_12_20.png,,"A cost-push inflation: no, rise in real incomes: no
 B cost-push inflation: no, rise in real incomes: yes
 C cost-push inflation: yes, rise in real incomes: no
 D cost-push inflation: yes, rise in real incomes: yes",D,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Difficult,Evaluation,9708_m23_qp_12_20
-21,"The diagram shows the aggregate demand (AD) and long-run aggregate supply (LRAS) curves for a country. X is the original equilibrium position. In one year, over one million foreign workers left the country and at the same time the country's currency appreciated against the currencies of its major trading partners. What will be the most likely new equilibrium position for this country?",quiz_images/9708_m23_qp_12_21.png,,"A
+21,"The diagram shows the aggregate demand (AD) and long-run aggregate supply (LRAS) curves for a country. X is the original equilibrium position. In one year, over one million foreign workers left the country and at the same time the country's currency appreciated against the currencies of its major trading partners. What will be the most likely new equilibrium position for this country?",9708_m23_qp_12_21.png,,"A
 B
 C
 D",C,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Difficult,Analysis,9708_m23_qp_12_21
@@ -98,11 +98,11 @@ D US pharmaceutical companies experience a fall in demand for their products fro
 B the purchasing power of its exports
 C the standard of living within the country
 D the value of its real exchange rate",B,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Easy,Recall,9708_m23_qp_12_24
-25,A company produces goods for export only. Which change could cause a rise in the price of its goods while the quantity sold is unchanged?,quiz_images/9708_m23_qp_12_25.png,,"A domestic workers' wages: unchanged, foreign consumers' wages: fall
+25,A company produces goods for export only. Which change could cause a rise in the price of its goods while the quantity sold is unchanged?,9708_m23_qp_12_25.png,,"A domestic workers' wages: unchanged, foreign consumers' wages: fall
 B domestic workers' wages: fall, foreign consumers' wages: unchanged
 C domestic workers' wages: fall, foreign consumers' wages: fall
 D domestic workers' wages: rise, foreign consumers' wages: rise",D,Topic 2: The price system and the microeconomy,AS,9708_m23_qp_12,Difficult,Evaluation,9708_m23_qp_12_25
-26,Under which current conditions will supply-side policy measures be most likely to achieve a country's key macroeconomic goals?,quiz_images/9708_m23_qp_12_26.png,,"A unemployment level: high, price level: stable
+26,Under which current conditions will supply-side policy measures be most likely to achieve a country's key macroeconomic goals?,9708_m23_qp_12_26.png,,"A unemployment level: high, price level: stable
 B unemployment level: high, price level: rising
 C unemployment level: low, price level: stable
 D unemployment level: low, price level: rising",B,Topic 5: Government macroeconomic intervention,AS,9708_m23_qp_12,Difficult,Analysis,9708_m23_qp_12_26
@@ -114,7 +114,7 @@ D It gives firms more confidence in future costs and prices.",A,Topic 5: Governm
 B budget surplus
 C nominal income
 D inflation",B,Topic 5: Government macroeconomic intervention,AS,9708_m23_qp_12,Medium,Understanding,9708_m23_qp_12_28
-29,The table shows GDP indices for a country over a three-year period. Inflation and economic growth are two macroeconomic policy objectives. Which row gives a correct assessment of the country’s achievement of these two objectives over the period?,quiz_images/9708_m23_qp_12_29.png,quiz_images/9708_m23_qp_12_29_1.png,"A rate of inflation: cannot tell, rate of economic growth: positive
+29,The table shows GDP indices for a country over a three-year period. Inflation and economic growth are two macroeconomic policy objectives. Which row gives a correct assessment of the country’s achievement of these two objectives over the period?,9708_m23_qp_12_29.png,9708_m23_qp_12_29_1.png,"A rate of inflation: cannot tell, rate of economic growth: positive
 B rate of inflation: declining, rate of economic growth: cannot tell
 C rate of inflation: positive, rate of economic growth: declining
 D rate of inflation: rising, rate of economic growth: negative",C,Topic 4: The macroeconomy,AS,9708_m23_qp_12,Difficult,Analysis,9708_m23_qp_12_29
@@ -126,11 +126,11 @@ D price-elastic demand for exports",D,Topic 5: Government macroeconomic interven
 B a free good
 C a merit good
 D a public good",C,Topic 1: Basic economic ideas and resource allocation,AS,9708_s26_qp_12,Easy,Understanding,9708_s26_qp_12_1
-2,"If the economy is producing at the boundary of its PPC, which statement is not correct?",quiz_images/99708_s26_qp_12_2.png,,"A The economy is always producing both goods and services.
+2,"If the economy is producing at the boundary of its PPC, which statement is not correct?",99708_s26_qp_12_2.png,,"A The economy is always producing both goods and services.
 B The economy is using all of the available resources.
 C The opportunity cost of producing goods is constant.
 D There is no unemployment in the economy.",A,Topic 1: Basic economic ideas and resource allocation,AS,9708_s26_qp_12,Medium,Analysis,9708_s26_qp_12_2
-3,"In the diagram, JK is an economy's original production possibility curve (PPC). What can cause the PPC to shift from JK to JL?",quiz_images/99708_s26_qp_12_3.png,,"A a fall in output per worker of manufactured goods
+3,"In the diagram, JK is an economy's original production possibility curve (PPC). What can cause the PPC to shift from JK to JL?",99708_s26_qp_12_3.png,,"A a fall in output per worker of manufactured goods
 B a fall in the demand for manufactured goods
 C a rise in the quality of technology used in manufactured goods
 D a rise in unemployment in the manufacturing sector",A,Topic 1: Basic economic ideas and resource allocation,AS,9708_s26_qp_12,Medium,Analysis,9708_s26_qp_12_3
@@ -146,15 +146,15 @@ D The value of a good or service involves a purely objective judgement.",D,Topic
 B 7%
 C 30%
 D 33.3%",C,Topic 2: The price system and the microeconomy,AS,9708_s26_qp_12,Easy,Application,9708_s26_qp_12_6
-7,The diagram shows an outward shift in the supply curve of televisions from S₁ to S₂. What may cause this shift?,quiz_images/99708_s26_qp_12_7.png,,"A an increase in consumer incomes
+7,The diagram shows an outward shift in the supply curve of televisions from S₁ to S₂. What may cause this shift?,99708_s26_qp_12_7.png,,"A an increase in consumer incomes
 B an increase in the cost of raw materials
 C an increase in the price of complements
 D an increase in the size of the working population",D,Topic 2: The price system and the microeconomy,AS,9708_s26_qp_12,Medium,Analysis,9708_s26_qp_12_7
-8,The demand for housing continues to rise as real incomes increase and more construction firms enter the market to build more houses. Which diagram represents this situation?,quiz_images/99708_s26_qp_12_8.png,,"A Both D and S curves shift rightward.
+8,The demand for housing continues to rise as real incomes increase and more construction firms enter the market to build more houses. Which diagram represents this situation?,99708_s26_qp_12_8.png,,"A Both D and S curves shift rightward.
 B D shifts rightward, S shifts leftward.
 C D shifts leftward, S shifts rightward.
 D Both D and S curves shift leftward.",A,Topic 2: The price system and the microeconomy,AS,9708_s26_qp_12,Medium,Analysis,9708_s26_qp_12_8
-9,The demand curve for a product is perfectly elastic and the supply curve is unit elastic. What is the value of the consumer surplus and producer surplus?,quiz_images/99708_s26_qp_12_9.png,,"A between zero and infinity / zero
+9,The demand curve for a product is perfectly elastic and the supply curve is unit elastic. What is the value of the consumer surplus and producer surplus?,99708_s26_qp_12_9.png,,"A between zero and infinity / zero
 B infinity / zero
 C zero / zero
 D zero / between zero and infinity",D,Topic 2: The price system and the microeconomy,AS,9708_s26_qp_12,Difficult,Evaluation,9708_s26_qp_12_9
@@ -170,11 +170,11 @@ D a government takeover of a local bus service",D,Topic 3: Government microecono
 B food vouchers to help low-income households pay for food
 C interest-free study loans given to deserving students by the government
 D salary paid to a nurse working in a hospital that provides free treatment",B,Topic 3: Government microeconomic intervention,AS,9708_s26_qp_12,Easy,Recall,9708_s26_qp_12_12
-13,The diagram shows the impact of a government subsidy on the provision of a merit good... What is the total cost of the subsidy?,quiz_images/99708_s26_qp_12_13.png,,"A $200
+13,The diagram shows the impact of a government subsidy on the provision of a merit good... What is the total cost of the subsidy?,99708_s26_qp_12_13.png,,"A $200
 B $400
 C $800
 D $1200",C,Topic 3: Government microeconomic intervention,AS,9708_s26_qp_12,Medium,Application,9708_s26_qp_12_13
-14,Which combination of measures is likely to reduce inequality in income and wealth the most?,quiz_images/99708_s26_qp_12_14.png,,"A less progressive / lower threshold / increase
+14,Which combination of measures is likely to reduce inequality in income and wealth the most?,99708_s26_qp_12_14.png,,"A less progressive / lower threshold / increase
 B less progressive / raise threshold / decrease
 C more progressive / lower threshold / increase
 D more progressive / raise threshold / decrease",C,Topic 3: Government microeconomic intervention,AS,9708_s26_qp_12,Difficult,Evaluation,9708_s26_qp_12_14
@@ -198,7 +198,7 @@ D investment, taxes and imports",A,Topic 4: The macroeconomy,AS,9708_s26_qp_12,E
 B actual output
 C productive capacity
 D potential output",B,Topic 4: The macroeconomy,AS,9708_s26_qp_12,Easy,Understanding,9708_s26_qp_12_19
-20,What is the most likely new equilibrium point if there is increased productivity in the manufacture of goods produced for the domestic market?,quiz_images/99708_s26_qp_12_20.png,,"A Point A (down and to the right along AD)
+20,What is the most likely new equilibrium point if there is increased productivity in the manufacture of goods produced for the domestic market?,99708_s26_qp_12_20.png,,"A Point A (down and to the right along AD)
 B Point B
 C Point C
 D Point D",A,Topic 4: The macroeconomy,AS,9708_s26_qp_12,Medium,Analysis,9708_s26_qp_12_20
@@ -206,7 +206,7 @@ D Point D",A,Topic 4: The macroeconomy,AS,9708_s26_qp_12,Medium,Analysis,9708_s2
 B to ensure a budget surplus
 C to ensure output matches the pattern of demand
 D to increase potential output",D,Topic 5: Government macroeconomic intervention,AS,9708_s26_qp_12,Easy,Recall,9708_s26_qp_12_21
-22,"A government reduced direct taxes on consumers and businesses. What are likely to be the effects on consumption, investment and national output?",quiz_images/99708_s26_qp_12_22.png,,"A decrease / decrease / decrease
+22,"A government reduced direct taxes on consumers and businesses. What are likely to be the effects on consumption, investment and national output?",99708_s26_qp_12_22.png,,"A decrease / decrease / decrease
 B decrease / increase / increase
 C increase / decrease / decrease
 D increase / increase / increase",D,Topic 5: Government macroeconomic intervention,AS,9708_s26_qp_12,Medium,Analysis,9708_s26_qp_12_22
@@ -238,7 +238,7 @@ D an increase in the rate of import duties",C,Topic 6: International economic is
 B a cut in interest rates
 C an increase in import tariffs
 D an increase in spending on domestic tourism",C,Topic 6: International economic issues,AS,9708_s26_qp_12,Medium,Application,9708_s26_qp_12_29
-30,What will cause the demand curve to shift to D₂ and the supply curve to S₂ on the foreign exchange market for the pound sterling (£)?,quiz_images/99708_s26_qp_12_30.png,,"A a decrease in the price levels of other countries
+30,What will cause the demand curve to shift to D₂ and the supply curve to S₂ on the foreign exchange market for the pound sterling (£)?,99708_s26_qp_12_30.png,,"A a decrease in the price levels of other countries
 B a depreciation of the pound sterling
 C a reduction in the level of UK import tariffs
 D an increase in UK interest rates",A,Topic 6: International economic issues,AS,9708_s26_qp_12,Difficult,Analysis,9708_s26_qp_12_30
