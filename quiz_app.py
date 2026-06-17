@@ -9,8 +9,8 @@ st.set_page_config(page_title="Economics QBank Quiz", layout="wide")
 # 1. Load the database
 @st.cache_data
 def load_data():
-    return pd.read_csv("Economics QBank - Qbank.csv")
-
+    # 'latin-1' handles special characters that usually cause this error
+    return pd.read_csv("Economics QBank - Qbank.csv", encoding='latin-1')
 df = load_data()
 
 # 2. PDF Generation Function
