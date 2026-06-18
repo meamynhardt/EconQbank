@@ -118,7 +118,11 @@ else:
     
     row = filtered_df.iloc[st.session_state.idx]
     
-    # Display Question ONLY (No topic labels)
+    # Displays the topic content cleanly as grey text with no heading label
+    if 'Topic' in row and pd.notna(row['Topic']):
+        st.caption(f"{str(row['Topic']).strip()}")
+    
+    # Display Question
     st.write(f"**{str(row['Question']).strip()}**")
     
     # Display Images ONLY if they exist
@@ -132,7 +136,7 @@ else:
     opts = str(row['Options']).split('\n')
     choice = st.radio("Select Answer:", opts, index=None, key=f"radio_{st.session_state.idx}")
     
-    # Submit & Next Logic (Removed erroneous st.rerun)
+    # Submit & Next Logic
     if st.button("Submit"):
         if choice and choice.startswith(str(row['Answer']).strip()):
             st.success("Correct!")
