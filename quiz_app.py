@@ -118,10 +118,10 @@ else:
     
     row = filtered_df.iloc[st.session_state.idx]
     
-    # Display Question
+    # Display Question ONLY (No topic labels)
     st.write(f"**{str(row['Question']).strip()}**")
     
-    # Display Images
+    # Display Images ONLY if they exist
     for col in ['Image', 'Image_1']:
         if col in row and pd.notna(row[col]) and str(row[col]).strip():
             path = str(row[col]).strip()
@@ -132,7 +132,7 @@ else:
     opts = str(row['Options']).split('\n')
     choice = st.radio("Select Answer:", opts, index=None, key=f"radio_{st.session_state.idx}")
     
-    # Submit & Next
+    # Submit & Next Logic (Removed erroneous st.rerun)
     if st.button("Submit"):
         if choice and choice.startswith(str(row['Answer']).strip()):
             st.success("Correct!")
