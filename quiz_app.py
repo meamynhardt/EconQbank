@@ -132,7 +132,7 @@ else:
     
 	# Ensure this block is aligned with the 'row = ...' code above it
     opts = str(row['Options']).split('\n')
-    choice = st.radio("Select Answer:", opts, index=None)
+    choice = st.radio("Select Answer:", opts, index=None, key=f"radio_{st.session_state.idx}")
     
     # This 'if' should have the same indentation as 'opts'
     if st.button("Submit"):
