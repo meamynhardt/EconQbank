@@ -13,7 +13,7 @@ def load_data():
 
 df = load_data()
 
-# 2. PDF Generator (Centered Images & Consistent Spacing)
+# 2. PDF Generator (Kept same formatting logic as requested)
 def generate_pdf(filtered_df):
     pdf = FPDF()
     pdf.add_page()
@@ -25,79 +25,57 @@ def generate_pdf(filtered_df):
             text = text.replace(char, rep)
         return text.encode('latin-1', 'replace').decode('latin-1')
 
-    # A helper function to measure how tall a question block will be
     def get_q_height(row, count):
         dummy = FPDF()
         dummy.add_page()
         dummy.set_auto_page_break(auto=False)
         start_y = dummy.get_y()
-        
         dummy.set_font("Arial", 'B', 12)
         dummy.multi_cell(0, 8, txt=f"{count}. {clean(row['Question'])}")
-        dummy.ln(2) # Space after question text
-        
+        dummy.ln(2)
         for col in ['Image', 'Image_1']:
             if col in row and pd.notna(row[col]) and str(row[col]).strip():
                 path = str(row[col]).strip()
                 if os.path.exists(path):
-                    img_w = 110 # Set uniform image width
-                    x_center = (210 - img_w) / 2 # Center horizontally on 210mm wide A4 page
-                    dummy.image(path, x=x_center, w=img_w)
-                    dummy.ln(4) # Space after image
-        
+                    dummy.image(path, x=(210-110)/2, w=110)
+                    dummy.ln(4)
         if pd.notna(row['Options']):
             dummy.set_font("Arial", '', 11)
             dummy.multi_cell(0, 6, txt=clean(row['Options']))
-        
-        dummy.ln(10) # Fixed space between questions
+        dummy.ln(10)
         return dummy.get_y() - start_y
 
-    # Build the Actual PDF
     pdf.set_font("Arial", 'B', 16)
     pdf.cell(200, 10, txt="Economics Quiz (Selected Questions)", ln=True, align='C')
     pdf.ln(10)
     
     for count, (index, row) in enumerate(filtered_df.iterrows(), 1):
         required_height = get_q_height(row, count)
-        
-        # If it doesn't fit in remaining space, force a new page
         if pdf.get_y() + required_height > 280:
             pdf.add_page()
-            
         pdf.set_font("Arial", 'B', 12)
         pdf.multi_cell(0, 8, txt=f"{count}. {clean(row['Question'])}")
-        pdf.ln(2) # Space after question text
-        
+        pdf.ln(2)
         for col in ['Image', 'Image_1']:
             if col in row and pd.notna(row[col]) and str(row[col]).strip():
                 path = str(row[col]).strip()
                 if os.path.exists(path):
-                    img_w = 110 # Set uniform image width
-                    x_center = (210 - img_w) / 2 # Center horizontally
-                    pdf.image(path, x=x_center, w=img_w)
-                    pdf.ln(4) # Space after image
-        
+                    pdf.image(path, x=(210-110)/2, w=110)
+                    pdf.ln(4)
         if pd.notna(row['Options']):
             pdf.set_font("Arial", '', 11)
             pdf.multi_cell(0, 6, txt=clean(row['Options']))
-            
-        pdf.ln(10) # Fixed space between questions
-        
+        pdf.ln(10)
     return pdf.output(dest='S').encode('latin-1')
 
-# 3. Sidebar Filters with CUSTOM Sorting
+# 3. Sidebar Filters
 st.sidebar.header("Quiz Settings")
-
 levels = sorted(df['Level'].dropna().unique().tolist())
 topics = sorted(df['Topic'].dropna().unique().tolist())
-
 diff_rank = {"Easy": 1, "Medium": 2, "Difficult": 3}
-raw_difficulties = df['Difficulty'].dropna().unique().tolist()
-difficulties = sorted(raw_difficulties, key=lambda x: diff_rank.get(x, 4))
-
+difficulties = sorted(df['Difficulty'].dropna().unique().tolist(), key=lambda x: diff_rank.get(x, 4))
 obj_rank = {"Recall": 1, "Understanding": 2, "Application": 3, "Analysis": 4, "Evaluation": 5}
-raw_objectives = df['Objective'].dropna().unique().tolist()
-objectives = sorted(raw_objectives, key=lambda x: obj_rank.get(x, 6))
+objectives = sorted(df['Objective'].dropna().unique().tolist(), key=lambda x: obj_rank.get(x, 6))
 
 selected_level = st.sidebar.selectbox("Select Level", ["All"] + levels)
 selected_difficulty = st.sidebar.selectbox("Select Difficulty", ["All"] + difficulties)
@@ -110,7 +88,7 @@ if selected_difficulty != "All": filtered_df = filtered_df[filtered_df['Difficul
 if selected_topic != "All": filtered_df = filtered_df[filtered_df['Topic'] == selected_topic]
 if selected_objective != "All": filtered_df = filtered_df[filtered_df['Objective'] == selected_objective]
 
-# 4. Session State
+# 4. Main UI Logic
 if 'idx' not in st.session_state: st.session_state.idx = 0
 if 'score' not in st.session_state: st.session_state.score = 0
 if 'answered' not in st.session_state: st.session_state.answered = False
@@ -121,7 +99,6 @@ if st.sidebar.button("Apply Filters"):
     st.session_state.answered = False
     st.rerun()
 
-# 5. Main UI
 st.title("Economics Quiz Generator")
 
 if len(filtered_df) == 0:
@@ -140,16 +117,15 @@ else:
     
     row = filtered_df.iloc[st.session_state.idx]
     
-    # --- ADDED GREYED OUT TOPIC ---
-    st.caption(f"Topic: {row['Topic']}")
-    
+    # REMOVED: st.caption(f"Topic: {row['Topic']}")
     st.write(f"**{str(row['Question']).strip()}**")
     
+    # IMAGE HANDLING: Only displays if file exists; no error message if missing
     for col in ['Image', 'Image_1']:
         if col in row and pd.notna(row[col]) and str(row[col]).strip():
             path = str(row[col]).strip()
-            if os.path.exists(path): st.image(path)
-            else: st.error(f"Image not found at: {path}")
+            if os.path.exists(path):
+                st.image(path)
 
     opts = str(row['Options']).split('\n')
     choice = st.radio("Select Answer:", opts, index=None)
@@ -161,10 +137,9 @@ else:
         else:
             st.error(f"Incorrect. Correct answer: {row['Answer']}")
         st.session_state.answered = True
+        st.rerun()
 
     if st.session_state.answered and st.button("Next"):
         st.session_state.idx = (st.session_state.idx + 1) % total_q
         st.session_state.answered = False
-        st.rerun()
-
-    st.sidebar.download_button("Download PDF", generate_pdf(filtered_df), "quiz.pdf", "application/pdf")
+        st.rerun
