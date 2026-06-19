@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import re  # <--- NEW: Imported regex for numerical sorting
 from fpdf import FPDF
 
 # Set page configuration
@@ -13,7 +14,7 @@ def load_data():
 
 df = load_data()
 
-# 2. PDF Generator Logic (No changes to the layout itself, just how it's called)
+# 2. PDF Generator Logic
 def generate_pdf(filtered_df):
     pdf = FPDF()
     pdf.add_page()
@@ -70,8 +71,20 @@ def generate_pdf(filtered_df):
 
 # 3. Sidebar Filters
 st.sidebar.header("Quiz Settings")
+
+# --- NEW NUMERICAL SORTING FOR TOPICS ---
+def sort_topic_by_number(topic_name):
+    # Finds the first number in the topic string (e.g., gets "11" from "Topic 11")
+    match = re.search(r'\d+', str(topic_name))
+    # If a number is found, return it as an integer to sort mathematically. 
+    # If no number is found, return 999 to push it to the bottom of the list.
+    return int(match.group()) if match else 999
+
+raw_topics = df['Topic'].dropna().unique().tolist()
+topics = sorted(raw_topics, key=sort_topic_by_number)
+# ----------------------------------------
+
 levels = sorted(df['Level'].dropna().unique().tolist())
-topics = sorted(df['Topic'].dropna().unique().tolist())
 diff_rank = {"Easy": 1, "Medium": 2, "Difficult": 3}
 difficulties = sorted(df['Difficulty'].dropna().unique().tolist(), key=lambda x: diff_rank.get(x, 4))
 obj_rank = {"Recall": 1, "Understanding": 2, "Application": 3, "Analysis": 4, "Evaluation": 5}
@@ -150,7 +163,7 @@ else:
         st.session_state.answered = False
         st.rerun()
 
-    # SPEED OPTIMIZATION: Wrapping generation inside a data function so it only triggers on press
+    # SPEED OPTIMIZATION
     st.sidebar.download_button(
         label="Download PDF", 
         data=generate_pdf(filtered_df), 
